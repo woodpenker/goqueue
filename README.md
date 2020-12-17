@@ -40,9 +40,11 @@ Linux 5.9.13-200.fc33.x86_64 #1 SMP Tue Dec 8 15:42:52 UTC 2020 x86_64 x86_64 x8
 Example:
 
 ```go
-
+import(
+    queue "github.com/woodpenker/goqueue"
+)
 func main() {
-    q := NewQueue(10)
+    q := queue.NewQueue(10)
     q.Push(12345)
     q.Push("hello")
     v1 := q.Pop()
